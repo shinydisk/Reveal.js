@@ -55,6 +55,9 @@ cd reveal.js
 python3 -m http.server
 ```
 Now, you can open Reveal.js on your browser : `http://localhost:8000`
+<a src="http://localhost:8000">
+  <img src="./assets/gifs/index-home.gif" alt="Index Home Gif">
+</a>
 
 
 # Configuration
