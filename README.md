@@ -72,5 +72,5 @@ Coming soon ...
 
 --- 
 <div align="center">
-  MIT licensed | Copyright © 2023-2024 Shinydisk, https://abkr.fr
+  MIT licensed | Copyright © 2023-2024 Shinydisk, https://site.abkr.fr
 </div>
