@@ -1,0 +1,13 @@
+####################################
+# Ignore Project file or directory #
+####################################
+
+## Fontawesome
+assets/icons/fontawesome-free-6.5.1-web/*
+
+
+######################
+# Random ignore file #
+######################
+
+.DS_Store
