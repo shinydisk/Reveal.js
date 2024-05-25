@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>00 Model</title>
+		
+		<!-- META ONLY -->
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Sh1nydisk">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- STYLE LINK ONLY -->
+		<link rel="stylesheet" href="../reveal/dist/reset.css">
+		<link rel="stylesheet" href="../reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal/dist/theme/blood.css">
+		<link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css">
+		<link href="../assets/icons/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<!-- HOME -->
+				<section data-background-image="./assets/gifs/index-home-background.gif"
+						 data-auto-animate>
+					<section >
+						<h1>Shinydisk's</h1>
+						<img src="../assets/img/reveal.png" alt="reveal.js" width="700">
+						<h2><i class="fa-solid fa-arrow-down"></i></h2>
+					</section>
+
+					<section>
+						<h3>Welcome to the Shinydisk's</h3>
+						<img src="../assets/img/reveal.png" alt="reveal.js" width="700">
+						<h3>The HTML Presentation Framework</h3><br>
+                        <h4>You can watch the demo here</h4>
+                        <i class="fa-solid fa-arrow-down"></i><br>
+                        <h5><a href="../reveal/demo.html">Demo&nbsp;<i class="fa-solid fa-video"></i></a></h5><br>
+                        <p>
+							<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						</p>
+					</section>
+				</section>
+
+
+				<!-- TABLE OF CONTENTS -->
+                <section data-markdown="./00.model.md"
+                         data-auto-animate
+                         data-separator="^\n\n\n"
+                         data-separator-vertical="^\n\n"
+                         data-separator-notes="^Note:"
+                         data-charset="iso-8859-15">
+                </section>
+
+			</div>
+		</div>
+
+		<script src="../reveal/dist/reveal.js"></script>
+		<script src="../reveal/plugin/zoom/zoom.js"></script>
+		<script src="../reveal/plugin/notes/notes.js"></script>
+		<script src="../reveal/plugin/search/search.js"></script>
+		<script src="../reveal/plugin/markdown/markdown.js"></script>
+		<script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
