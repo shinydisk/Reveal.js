@@ -1,22 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 	<head>
+
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Sh1nydisk Reveal.js</title>
+		
+		<!-- META ONLY -->
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Sh1nydisk">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Reveal.js</title>
-
+		<!-- STYLE LINK ONLY -->
 		<link rel="stylesheet" href="./reveal/dist/reset.css">
 		<link rel="stylesheet" href="./reveal/dist/reveal.css">
-		<link rel="stylesheet" href="./reveal/dist/theme/blood.css">
-		<link rel="icon" href="./assets/icons/reveal.png">
+		<link rel="stylesheet" href="./reveal/dist/theme/blood.css" id="theme">
+		<link rel="stylesheet" href="./reveal/plugin/highlight/monokai.css">
 		<link href="./assets/icons/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
+
 	<body>
+
 		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
 
@@ -30,17 +39,20 @@
 					</section>
 
 					<section>
-						<h3>Welcome to the Shinydisk's Reveal.js</h3>
-                        <p>Here is a development environment for storing and configuring beautiful presentations.</p><br>
-                        <h4>You can watch the demo here&nbsp;</h4>
+						<h3>Welcome to the Shinydisk's</h3>
+						<img src="./assets/img/reveal.png" alt="reveal.js" width="700">
+						<h3>The HTML Presentation Framework</h3><br>
+                        <h4>You can watch the demo here</h4>
                         <i class="fa-solid fa-arrow-down"></i><br>
                         <h5><a href="./reveal/demo.html">Demo&nbsp;<i class="fa-solid fa-video"></i></a></h5><br>
-                        <p>Let's go to the table of contents&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></p>
+                        <p>
+							<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						</p>
 					</section>
 				</section>
 
 
-                <!-- TABLE OF CONTENTS -->
+				<!-- TABLE OF CONTENTS -->
                 <section data-markdown
                          data-auto-animate
                          data-background-image="./assets/gifs/index-home-background.gif">
@@ -48,7 +60,7 @@
                         ___
                         ## TABLE OF CONTENTS
                         ___
-                        - [<i class="fa-solid fa-shapes"></i>&nbsp;Reveal.js Templates](#/2)
+                        - [<i class="fa-solid fa-shapes"></i>&nbsp;Reveal.js Themes](#/2)
                         - [<i class="fa-solid fa-shapes"></i>&nbsp;Personal Templates](#/3)
                         - [<i class="fa-solid fa-window-restore"></i>&nbsp;Presentations](#/4)
                         - [<i class="fa-solid fa-id-card"></i>&nbsp;Contact](#/5)
@@ -56,16 +68,24 @@
                     </textarea>
                 </section>
 
-				<!-- REVEAL.JS TEMPLATES -->
-				<section data-markdown
-						 data-auto-animate
-						 data-background-image="./assets/gifs/index-home-background.gif">
-					<textarea data-template>
-                        ## REVEAL.JS TEMPLATES
-                        [Beige](./tmp/reveal.js/beige/index.html) | [Black](./tmp/reveal.js/black/index.html) | [Black Contrast](./tmp/reveal.js/black-contrast/index.html) | [Blood](./tmp/reveal.js/blood/index.html) | [Dracula](./tmp/reveal.js/dracula/index.html)<br>
-                        [League](./tmp/reveal.js/league/index.html) | [Moon](./tmp/reveal.js/moon/index.html) | [Night](./tmp/reveal.js/night/index.html) | [Serif](./tmp/reveal.js/serif/index.html) | [White Con Compact](./tmp/reveal.js/white-contrast-compact/index.html)<br>
-						[Sky](./tmp/reveal.js/sky/index.html) | [Solarized](./tmp/reveal.js/solarized/index.html) | [White](./tmp/reveal.js/white/index.html) | [White Contrast](./tmp/reveal.js/white-contrast/index.html) | [Simple](./tmp/reveal.js/simple/index.html)<br>
-                    </textarea>
+
+				<!-- REVEAL.JS THEMES -->
+				<section data-auto-animate>
+					<h2>REVEAL.JS THEMES</h2>					
+					<p>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/white.css'); return false;">White</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/league.css'); return false;">League</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/sky.css'); return false;">Sky</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/beige.css'); return false;">Beige</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/serif.css'); return false;">Serif</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/blood.css'); return false;">Blood</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/night.css'); return false;">Night</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/moon.css'); return false;">Moon</a> -
+						<a href="#/themes" onclick="document.getElementById('theme').setAttribute('href','./reveal/dist/theme/solarized.css'); return false;">Solarized</a>
+					</p>
 				</section>
 
 
@@ -91,7 +111,7 @@
 						## PRESENTATIONS
 						List all your presentations
 						```md
-						- [Presentation Title](./presentations/<presentationstitle>)
+						- [Presentation Title](./pres/<presentationstitle>)
 						```
 					</textarea>
                 </section>
@@ -105,23 +125,31 @@
                         <p><a href="mailto:fshinydisk@proton.me"><strong><i class="fa-solid fa-envelope"></i>&nbsp;fshinydisk@proton.me</a></strong></p>
                         <p><a href="https://github.com/shinydisk"><strong><i class="fa-brands fa-github-alt"></i>&nbsp;shinydisk</a></strong></p>
                 </section>
+
 			</div>
 		</div>
 
 		<script src="./reveal/dist/reveal.js"></script>
+		<script src="./reveal/plugin/zoom/zoom.js"></script>
 		<script src="./reveal/plugin/notes/notes.js"></script>
+		<script src="./reveal/plugin/search/search.js"></script>
 		<script src="./reveal/plugin/markdown/markdown.js"></script>
 		<script src="./reveal/plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
 			});
+
 		</script>
+
 	</body>
 </html>
