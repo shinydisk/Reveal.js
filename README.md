@@ -46,7 +46,7 @@ Now, you can open Reveal.js on your browser : `http://localhost:8000`
 ## Full installation
 ```bash
 # Download the source code
-git clone https://github.com/shinydisk/reveal.js.git
+git clone https://github.com/shinydisk/Reveal.js.git
 
 # Enter to the repository
 cd reveal.js
@@ -72,5 +72,5 @@ Coming soon ...
 
 --- 
 <div align="center">
-  MIT licensed | Copyright © 2023-2024 Shinydisk, https://site.abkr.fr
+  MIT licensed | Copyright © 2023-2024 Shinydisk, https://abkr.fr
 </div>
